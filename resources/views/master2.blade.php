@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <!-- Brand -->
-        <a class="navbar-brand" href="#">5026221009 Indriyani Alif Safitrio</a>
+        <a class="navbar-brand" href="#">5026221009 Indriyani Alif Safitri</a>
 
         <!-- Links -->
         <ul class="navbar-nav">

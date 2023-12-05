@@ -14,23 +14,34 @@
 	<form action="/pegawai/store" method="post" class="form-horizontal">
 		{{ csrf_field() }}
         <div class="form-group row">
-            <label for="nama" class="col-xs-3 col-form-label mr-2">Nama</label>
-            <div class="col-xs-9">
+            <label for="nama" class="col-sm-1 control-label">Nama</label>
+            <div class="col-sm-9">
             <input type="text" class="form-control" id="nama" name="nama">
             </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="jabatan" class="col-sm-1 control-label">Jabatan</label>
+            <div class="col-sm-9">
+            <input type="text" class="form-control" id="jabatan" name="jabatan">
             </div>
+        </div>
 
-            <div class="form-group row">
-                <label for="jabatan" class="col-xs-3 col-form-label mr-2">Jabatan</label>
-                <div class="col-xs-9">
-                <input type="text" class="form-control" id="jabatan" name="jabatan">
-                </div>
-                </div>
+        <div class="form-group row">
+            <label for="jabatan" class="col-sm-1 control-label">Umur</label>
+            <div class="col-sm-9">
+            <input type="text" class="form-control" id="umur" name="umur">
+            </div>
+        </div>
 
-		Nama <input type="text" name="nama"> <br/>
-		Jabatan <input type="text" name="jabatan"> <br/>
-		Umur <input type="number" name="umur"> <br/>
-		Alamat <textarea name="alamat"></textarea> <br/>
+        <div class="form-group row">
+            <label for="alamat" class="col-sm-1 control-label">Alamat</label>
+            <div class="col-sm-9">
+            <textarea type="text" class="form-control" id="alamat" name="alamat"></textarea>
+            </div>
+        </div>
+
+
 		<input type="submit" value="Simpan Data" class="btn btn-primary">
 	</form>
 
