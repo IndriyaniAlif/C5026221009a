@@ -97,3 +97,32 @@ Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus')
 
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
+
+Route::get('/keranjangbelanja','App\Http\Controllers\KeranjangController@index2');
+Route::get('/keranjangbelanja/hapus/{id}','App\Http\Controllers\KeranjangController@hapus2');
+Route::post('/keranjangbelanja/store2','App\Http\Controllers\KeranjangController@store2');
+Route::get('/keranjangbelanja/tambah2','App\Http\Controllers\KeranjangController@tambah2');
+
+//route CRUD nilaikuliah
+Route::get('/nilaikuliah','App\Http\Controllers\NilaiController@index');
+Route::get('/nilaikuliah/tambahData','App\Http\Controllers\NilaiController@tambah');
+Route::post('/nilaikuliah/store','App\Http\Controllers\NilaiController@store');
+
+//route CRUD sepeda
+Route::get('/sepeda','App\Http\Controllers\SepedaController@indexsepeda');
+Route::get('/sepeda/tambahsepeda','App\Http\Controllers\SepedaController@tambahsepeda');
+Route::post('/sepeda/storesepeda','App\Http\Controllers\SepedaController@storesepeda');
+Route::get('/sepeda/hapussepeda/{id}','App\Http\Controllers\SepedaController@hapussepeda');
+Route::get('/sepeda/viewsepeda/{id}','App\Http\Controllers\SepedaController@viewsepeda');
+Route::get('/sepeda/editsepeda/{id}','App\Http\Controllers\SepedaController@editsepeda');
+Route::post('/sepeda/update','App\Http\Controllers\SepedaController@update');
+Route::get('/sepeda/cari','App\Http\Controllers\SepedaController@cari');
+
+Route::get('/pegawai','App\Http\Controllers\PegawaiController@index');
+Route::get('/pegawai/tambah','App\Http\Controllers\PegawaiController@tambah');
+Route::post('/pegawai/store','App\Http\Controllers\PegawaiController@store');
+Route::get('/pegawai/edit/{id}','App\Http\Controllers\PegawaiController@edit');
+Route::post('/pegawai/update','App\Http\Controllers\PegawaiController@update');
+Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus');
+Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
+Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
