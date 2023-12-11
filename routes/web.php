@@ -138,25 +138,9 @@ Route::get('/latihanlagi/tambahlatihanlagi','App\Http\Controllers\LatihanlagiCon
 Route::post('/latihanlagi/storelatihanlagi','App\Http\Controllers\LatihanlagiController@storelatihanlagi');
 Route::get('/latihanlagi/cari','App\Http\Controllers\LatihanlagiController@cari');
 
-Route::get('/chat','App\Http\Controllers\ChatController@index');
-Route::get('/chat', 'ChatController@index');
-
-Route::get('/pegawai/edit/{id}','App\Http\Controllers\PegawaiController@edit');
-Route::post('/pegawai/update','App\Http\Controllers\PegawaiController@update');
-Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus');
-Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
-Route::get('/pegawai/view','App\Http\Controllers\PegawaiController@view');
-
 Route::get('/conter','App\Http\Controllers\ConterController@indexconter');
 
-Route::get('/chat', 'App\Http\Controllers\ChatController@index');
-Route::get('/chat/view', 'App\Http\Controllers\ChatController@view');
+//Route CRUD EAS
+Route::get('/chat','App\Http\Controllers\ChatController@indexchat');
 
-Route::get('/pegawai','App\Http\Controllers\PegawaiController@index');
-Route::get('/pegawai/tambah','App\Http\Controllers\PegawaiController@tambah');
-Route::post('/pegawai/store','App\Http\Controllers\PegawaiController@store');
-Route::get('/pegawai/edit/{id}','App\Http\Controllers\PegawaiController@edit');
-Route::post('/pegawai/update','App\Http\Controllers\PegawaiController@update');
-Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus');
-Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
-Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
+

@@ -33,6 +33,7 @@
               <a class="dropdown-item" href="nilaikuliah">Nilai Kuliah</a>
               <a class="dropdown-item" href="/sepeda">Sepeda</a>
               <a class="dropdown-item" href="/keranjangbelanja">Keranjang Belanja</a>
+              <a class="dropdown-item" href="/chat">CHAT</a>
             </div>
           </li>
         </ul>
